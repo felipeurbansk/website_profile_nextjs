@@ -1,12 +1,9 @@
 :root {
   --primary-image-border-color: rgb(59, 176, 160);
   --primary-card-color: rgba(18, 75, 67, 0.3);
-  --gradient-primary-image-round-color: rgba(59, 176, 160, 0.1);
-  --gradient-secondary-image-round-color: rgba(76, 211, 191, 0.1);
 }
 
 * {
-  box-sizing: unset;
   border: none;
   padding: 0;
   margin: 0;

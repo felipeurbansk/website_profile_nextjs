@@ -15,7 +15,7 @@ const NavBar = (props) => {
     <Navbar className="fixed-top" bg="dark" expand="md">
       <Navbar.Brand href="#home">
         <img
-          src="/logo.png"
+          src="/logo.webp"
           width="50"
           height="50"
           className="d-inline-block align-top"
