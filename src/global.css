@@ -62,7 +62,7 @@ body {
 .primary-infos .photo {
   display: flex;
   position: absolute;
-  top: 110px;
+  top: 120px;
   max-width: 200px;
   justify-content: center;
   align-items: center;
@@ -86,7 +86,7 @@ body {
   border-radius: 20px;
   background-color: #2d3134;
   position: absolute;
-  top: 210px;
+  top: 220px;
   padding-bottom: 40px;
 }
 
