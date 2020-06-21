@@ -15,10 +15,6 @@ body {
   background-color: #1e2326;
 }
 
-.main {
-  margin-top: 76px;
-}
-
 #navbar-menu .link-page {
   color: #bbb2b2;
   font-size: 13px;
@@ -49,6 +45,10 @@ body {
 
 .content-pages section:nth-child(2n) {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .primary-infos {
@@ -119,8 +119,67 @@ body {
   border: 1px solid #fff;
 }
 
-.content-pages .content-about {
-  background-color: teal;
+.content-pages .content-about h3 {
+  color: #fff;
+}
+
+.content-pages .content-about p {
+  padding: 5px 20px;
+  text-align: justify;
+  line-height: 26px;
+}
+
+.content-about .group-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.content-about .group-columns h4 {
+  color: #fff;
+}
+
+.content-about .group-columns .colum {
+  width: 100%;
+}
+
+table tr {
+  line-height: 30px;
+}
+
+table tr td {
+  padding-left: 20px;
+}
+
+.my-interest {
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  grid-gap: 20px;
+}
+
+.frame-interest {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 16px;
+  background-color: var(--primary-card-color);
+  transition: filter 0.2s;
+}
+
+.frame-interest:hover {
+  filter: contrast(100);
+}
+
+.frame-interest svg {
+  font-size: 30px;
+}
+
+.frame-interest span {
+  color: #fff;
+  font-size: 13px;
 }
 
 .content-pages .content-skills {

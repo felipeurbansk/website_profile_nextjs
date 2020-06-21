@@ -12,7 +12,7 @@ import {
 
 const NavBar = (props) => {
   return (
-    <Navbar className="fixed-top" bg="dark" expand="md">
+    <Navbar bg="dark" expand="md">
       <Navbar.Brand href="#home">
         <img
           src="/logo.webp"
