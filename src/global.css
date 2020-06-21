@@ -29,11 +29,6 @@ body {
   color: #fff;
 }
 
-.navbar-controll {
-  justify-content: flex-end;
-  margin-right: 20px;
-}
-
 .content-pages {
   width: 100%;
 }
@@ -67,7 +62,7 @@ body {
 .primary-infos .photo {
   display: flex;
   position: absolute;
-  top: 150px;
+  top: 110px;
   max-width: 200px;
   justify-content: center;
   align-items: center;
@@ -91,7 +86,7 @@ body {
   border-radius: 20px;
   background-color: #2d3134;
   position: absolute;
-  top: 250px;
+  top: 210px;
   padding-bottom: 40px;
 }
 
