@@ -1,50 +1,22 @@
-import Link from "next/link";
+import { useState } from "react";
 import Head from "next/head";
+import NavBar from "./components/NavBar";
 
 function HomePage() {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  function visibleMenu() {
+    setToggleMenu(true);
+  }
+
   return (
     <div className="main">
       <Head>
         <title>Felipe Urbanski - Fullstack Developer</title>
-        <div className="nav-bar">
-          <img src="/logo.png" alt="Logo" width="50" height="50" />
-          <nav>
-            <ul>
-              <li>
-                <Link href="/">
-                  <a>HOME</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/">
-                  <a>ABOUT</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/">
-                  <a>SKILLS</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/">
-                  <a>RESUME</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/">
-                  <a>PORTFOLIO</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/">
-                  <a>CONTACT</a>
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
       </Head>
+      <NavBar />
       <div className="content-pages">
+        {/* <Button>Teste</Button> */}
         <section className="content-home"></section>
         <section className="content-about"></section>
         <section className="content-skills"></section>
