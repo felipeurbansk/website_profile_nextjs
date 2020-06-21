@@ -1,3 +1,10 @@
+:root {
+  --primary-image-border-color: rgb(59, 176, 160);
+  --primary-card-color: rgba(18, 75, 67, 0.3);
+  --gradient-primary-image-round-color: rgba(59, 176, 160, 0.1);
+  --gradient-secondary-image-round-color: rgba(76, 211, 191, 0.1);
+}
+
 * {
   box-sizing: unset;
   border: none;
@@ -11,17 +18,18 @@ body {
   background-color: #1e2326;
 }
 
-.navbar-nav {
-  padding: 15px;
+.main {
+  margin-top: 76px;
 }
 
 #navbar-menu .link-page {
   color: #bbb2b2;
+  font-size: 13px;
+  transition: color 0.4s;
 }
 
-#navbar-menu .link-page {
-  font-size: 13px;
-  font-weight: 700;
+#navbar-menu .link-page:hover {
+  color: #fff;
 }
 
 .navbar-controll {
@@ -34,15 +42,89 @@ body {
 }
 
 .content-pages section {
-  height: 90vh;
+  height: 87vh;
+  background-color: #1e2326;
 }
 
-.content-pages section:nth-child(1n) {
+.content-pages .bg-home {
+  height: 87vh;
+  background-image: url("/img/background_2.jpg");
+  background-size: cover;
+  opacity: 0.2;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+.content-pages section:nth-child(2n) {
   height: 100vh;
 }
 
-.content-pages .content-home {
-  background-color: tomato;
+.primary-infos {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.primary-infos .photo {
+  display: flex;
+  position: absolute;
+  top: 150px;
+  max-width: 200px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.primary-infos .photo img {
+  width: 100%;
+  border: 9px solid var(--primary-image-border-color);
+}
+
+.primary-infos .container-card {
+  display: flex;
+  width: 100%;
+  max-width: 265px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  padding-top: 90px;
+  border-radius: 20px;
+  background-color: #2d3134;
+  position: absolute;
+  top: 250px;
+  padding-bottom: 40px;
+}
+
+.primary-infos .container-card .fullname {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.primary-infos .container-card .subtitle {
+  font-size: 14px;
+}
+
+.primary-infos .container-card .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-infos .container-card .social ul {
+  list-style: none;
+  display: flex;
+}
+
+.primary-infos .container-card .social ul li {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 60%;
+  height: 40px;
+  border: 1px solid #fff;
 }
 
 .content-pages .content-about {

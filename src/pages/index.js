@@ -1,23 +1,46 @@
-import { useState } from "react";
 import Head from "next/head";
 import NavBar from "./components/NavBar";
 
-function HomePage() {
-  const [toggleMenu, setToggleMenu] = useState(false);
+import { FiTwitter, FiFacebook, FiLinkedin } from "react-icons/fi";
 
-  function visibleMenu() {
-    setToggleMenu(true);
-  }
-
+function Index() {
   return (
     <div className="main">
       <Head>
         <title>Felipe Urbanski - Fullstack Developer</title>
+        <NavBar />
       </Head>
-      <NavBar />
       <div className="content-pages">
         {/* <Button>Teste</Button> */}
-        <section className="content-home"></section>
+        <section className="content-home">
+          <div className="bg-home responsive"></div>
+          <div className="primary-infos">
+            <div className="rounded-circle photo">
+              <img
+                className="rounded-circle"
+                src="/img/perfil.png"
+                alt="Minha foto."
+              />
+            </div>
+            <div className="container-card">
+              <h1 className="fullname">Felipe Urbanski</h1>
+              <p className="subtitle">Fullstack Developer</p>
+              <div className="social">
+                <ul>
+                  <li>
+                    <FiTwitter />
+                  </li>
+                  <li>
+                    <FiFacebook />
+                  </li>
+                  <li>
+                    <FiLinkedin />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="content-about"></section>
         <section className="content-skills"></section>
         <section className="content-resume"></section>
@@ -28,4 +51,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Index;

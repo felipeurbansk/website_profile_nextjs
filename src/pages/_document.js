@@ -26,6 +26,12 @@ class MyDocument extends Document {
             as="font"
             crossOrigin=""
           />
+          <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap"
+            as="font"
+            crossOrigin=""
+          />
         </Head>
         <body>
           <Main />
