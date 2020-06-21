@@ -48,7 +48,7 @@ body {
 
 .content-pages .bg-home {
   height: 87vh;
-  background-image: url("/img/background_2.jpg");
+  background-image: url("/img/background_2.webp");
   background-size: cover;
   opacity: 0.2;
   filter: blur(2px);
@@ -90,7 +90,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 15px;
-  padding-top: 90px;
+  padding-top: 110px;
   border-radius: 20px;
   background-color: #2d3134;
   position: absolute;

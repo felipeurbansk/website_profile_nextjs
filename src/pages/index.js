@@ -18,7 +18,7 @@ function Index() {
             <div className="rounded-circle photo">
               <img
                 className="rounded-circle"
-                src="/img/perfil.jpg"
+                src="/img/perfil.webp"
                 alt="Minha foto."
               />
             </div>
