@@ -30,7 +30,7 @@ body {
 }
 
 .content-pages section {
-  height: 87vh;
+  /* height: 87vh; */
   background-color: #1e2326;
 }
 
@@ -43,7 +43,7 @@ body {
   z-index: -1;
 }
 
-.content-pages section:nth-child(2n) {
+.content-pages section:nth-child(n + 2):nth-child(-n + 6) {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -142,10 +142,13 @@ body {
 
 .content-about .group-columns .colum {
   width: 100%;
+  padding: 20px 0;
+  justify-content: center;
 }
 
 table tr {
   line-height: 30px;
+  color: #1dad98;
 }
 
 table tr td {
@@ -182,7 +185,7 @@ table tr td {
   font-size: 13px;
 }
 
-.content-pages .content-skills {
+.content-pages .content-github {
   background-color: violet;
 }
 

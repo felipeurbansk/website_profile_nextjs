@@ -2,6 +2,7 @@ import Head from "next/head";
 import NavBar from "./components/NavBar";
 import SectionHome from "./components/SectionHome";
 import SectionAbout from "./components/SectionAbout";
+import SectionGithub from "./components/SectionGithub";
 
 function Index() {
   return (
@@ -14,7 +15,7 @@ function Index() {
         {/* <Button>Teste</Button> */}
         <SectionHome />
         <SectionAbout />
-        <section className="content-skills"></section>
+        <SectionGithub />
         <section className="content-resume"></section>
         <section className="content-portfolio"></section>
         <section className="content-contatc"></section>
