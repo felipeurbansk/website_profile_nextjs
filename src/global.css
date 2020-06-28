@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+
 :root {
   --primary-image-border-color: rgb(59, 176, 160);
   --primary-card-color: rgba(18, 75, 67, 0.3);
@@ -7,7 +9,7 @@
   border: none;
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #9fa1ad;
   outline: none;
   text-decoration: none;
@@ -19,6 +21,7 @@ h2,
 h3,
 h4,
 h5 {
+  font-family: "Ubuntu", sans-serif;
   outline: none;
   text-decoration: none;
   color: #fff;
@@ -62,7 +65,7 @@ body {
 }
 
 .content-pages section:nth-child(n + 2):nth-child(-n + 6) {
-  height: 101vh;
+  height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,8 +163,15 @@ body {
 
 .content-about .group-columns .colum {
   width: 100%;
+  border-radius: 8px;
+  margin: 5px 0;
   padding: 20px 0;
   justify-content: center;
+}
+
+.group-columns fieldset legend {
+  font-size: 18px;
+  border-bottom: 1px solid #777;
 }
 
 table tr {
@@ -173,13 +183,19 @@ table tr td {
   padding-left: 20px;
 }
 
+.experiences {
+  display: grid;
+  grid-template-columns: 70px 70px 70px 70px;
+  grid-gap: 20px;
+}
+
 .my-interest {
   display: grid;
   grid-template-columns: 80px 80px 80px;
   grid-gap: 20px;
 }
 
-.frame-interest {
+.frame-icon {
   display: flex;
   padding: 15px;
   justify-content: center;
@@ -187,25 +203,44 @@ table tr td {
   flex-direction: column;
   border-radius: 16px;
   background-color: var(--primary-card-color);
-  transition: filter 0.2s;
+  transition: transform 0.3s;
+  border: 1px solid transparent;
 }
 
-.frame-interest:hover {
-  filter: contrast(100);
+.frame-icon:hover {
+  background-color: rgba(18, 44, 41, 1);
+  border-color: #777;
+  transform: scale(1.2);
 }
 
-.frame-interest svg {
+.frame-icon svg {
   font-size: 30px;
 }
 
-.frame-interest span {
+.frame-icon span {
   color: #fff;
   font-size: 13px;
+}
+
+.experiences .frame-icon svg {
+  font-size: 28px;
+}
+
+.experiences .frame-icon span {
+  font-size: 11px;
 }
 
 .content-pages .content-github {
   background-color: #3e4854;
   justify-content: space-around !important;
+}
+
+.content-github a svg {
+  transition: transform 0.3s;
+}
+
+.content-github a svg:hover {
+  transform: rotate(18deg);
 }
 
 .content-github .section {
