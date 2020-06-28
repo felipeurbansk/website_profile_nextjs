@@ -58,30 +58,33 @@ const SectionGithub = ({ github, repos }) => (
       <div className="section section-repo">
         <h5>Repositórios</h5>
         <SimpleBar className="container-repos">
-          {repos.map((repo) => (
-            <a href={repo.html_url}>
-              <Card className="repository mb-2">
-                <Card.Body key={repo.id}>
-                  <div className="row row-repo">
-                    <div className="header-card">
-                      <div className="title">
-                        <Card.Title>
-                          {repo.name}
-                          <GoRepoPull size={18} />
-                        </Card.Title>
-                        <Card.Subtitle className="description">
-                          {repo.description}
-                        </Card.Subtitle>
-                        <Card.Subtitle className="languages">
-                          {languages[String(repo.language).toLowerCase()]}
-                        </Card.Subtitle>
+          {repos.map(
+            (repo) =>
+              repo && (
+                <a href={repo.html_url}>
+                  <Card className="repository mb-2">
+                    <Card.Body key={repo.id}>
+                      <div className="row row-repo">
+                        <div className="header-card">
+                          <div className="title">
+                            <Card.Title>
+                              {repo.name}
+                              <GoRepoPull size={18} />
+                            </Card.Title>
+                            <Card.Subtitle className="description">
+                              {repo.description}
+                            </Card.Subtitle>
+                            <Card.Subtitle className="languages">
+                              {languages[String(repo.language).toLowerCase()]}
+                            </Card.Subtitle>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                </Card.Body>
-              </Card>
-            </a>
-          ))}
+                    </Card.Body>
+                  </Card>
+                </a>
+              )
+          )}
         </SimpleBar>
       </div>
     )}
