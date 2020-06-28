@@ -64,9 +64,9 @@ const SectionGithub = ({ github, repos }) => (
           {repos.map(
             (repo) =>
               repo && (
-                <a href={repo.html_url}>
+                <a href={repo.html_url} key={repo.id}>
                   <Card className="repository mb-2">
-                    <Card.Body key={repo.id}>
+                    <Card.Body>
                       <div className="row row-repo">
                         <div className="header-card">
                           <div className="title">
