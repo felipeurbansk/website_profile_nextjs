@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 
 const NavBar = (props) => {
   return (

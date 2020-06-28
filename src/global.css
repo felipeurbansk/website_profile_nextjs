@@ -253,7 +253,7 @@ table tr td {
 }
 
 .container-repos {
-  max-height: 400px;
+  max-height: 330px;
   overflow: hidden;
   overflow-y: auto;
 }

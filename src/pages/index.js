@@ -1,19 +1,13 @@
 import Head from "next/head";
 // import "isomorphic-fetch";
-import NavBar from "./components/NavBar";
 import SectionHome from "./components/SectionHome";
 import SectionAbout from "./components/SectionAbout";
 import SectionGithub from "./components/SectionGithub";
 
 function Index({ github, repos }) {
   return (
-    <div className="main">
-      <Head>
-        <title>Felipe Urbanski - Fullstack Developer</title>
-        <NavBar />
-      </Head>
+    <main className="main">
       <div className="content-pages">
-        {/* <Button>Teste</Button> */}
         <SectionHome />
         <SectionAbout />
         <SectionGithub github={github} repos={repos} />
@@ -21,7 +15,7 @@ function Index({ github, repos }) {
         <section className="content-portfolio"></section>
         <section className="content-contatc"></section>
       </div>
-    </div>
+    </main>
   );
 }
 

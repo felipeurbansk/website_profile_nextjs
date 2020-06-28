@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-
+import NavBar from "./components/NavBar";
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -32,6 +32,7 @@ class MyDocument extends Document {
             as="font"
             crossOrigin=""
           />
+          <NavBar />
         </Head>
         <body>
           <Main />
