@@ -9,6 +9,24 @@
   margin: 0;
   font-family: "Roboto", sans-serif;
   color: #9fa1ad;
+  outline: none;
+  text-decoration: none;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+a:link:hover {
+  outline: none;
+  text-decoration: none;
 }
 
 body {
@@ -186,7 +204,112 @@ table tr td {
 }
 
 .content-pages .content-github {
-  background-color: violet;
+  background-color: #3e4854;
+  justify-content: space-around !important;
+}
+
+.content-github .section {
+  width: 80%;
+}
+
+.content-github .card-title {
+  color: #231b4f;
+}
+
+.content-github .header-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-github .card-subtitle {
+  font-size: 14px;
+}
+
+.content-github .card-text {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.content-github .text-infos {
+  width: 100%;
+}
+
+.content-github .box-follower {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.content-github .box-follower .card-text,
+.counter {
+  color: #231b4f;
+  font-size: 14px;
+}
+
+.section-repo h5 {
+  display: none;
+}
+
+.container-repos {
+  max-height: 300px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.container-repos::-webkit-scrollbar {
+  display: none;
+}
+
+.container-repos .card-body {
+  padding: 14px 30px;
+  transition: transform 0.3s;
+}
+
+.card-body:link {
+  outline: none;
+  text-decoration: none;
+}
+
+.container-repos .card-body:hover {
+  transform: scale(1.02);
+}
+
+.counter {
+  font-weight: bold;
+  margin-right: 3px;
+}
+
+.text-infos .icon {
+  margin-right: 3px;
+}
+
+.content-github .box-follower .icon {
+  margin: 0 3px;
+}
+
+.content-github .separator {
+  margin: 0 3px;
+}
+
+.content-github .row-repo .title {
+  width: 100%;
+}
+
+.content-github .row-repo .card-title {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-github .row-repo .card-subtitle.description {
+  font-size: 12px;
+}
+
+.content-github .row-repo .languages svg {
+  margin-top: 10px;
+  filter: invert(70%);
 }
 
 .content-pages .content-resume {
