@@ -15,7 +15,11 @@ const languages = {
 
 const SectionGithub = ({ github, repos }) => (
   <section className="content-github">
-    <a href="https://github.com/felipeurbansk" target="_blank">
+    <a
+      className="logo-link"
+      href="https://github.com/felipeurbansk"
+      target="_blank"
+    >
       <AiFillGithub size={55} />
     </a>
     {github && repos && (

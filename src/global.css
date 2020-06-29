@@ -2,7 +2,7 @@
 
 :root {
   --primary-image-border-color: rgb(59, 176, 160);
-  --primary-card-color: rgba(18, 75, 67, 0.3);
+  --primary-card-color: #124b434d;
 }
 
 * {
@@ -10,7 +10,6 @@
   padding: 0;
   margin: 0;
   font-family: "Ubuntu", sans-serif;
-  color: #9fa1ad;
   outline: none;
   text-decoration: none;
 }
@@ -20,7 +19,10 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+p,
+span,
+div {
   font-family: "Ubuntu", sans-serif;
   outline: none;
   text-decoration: none;
@@ -121,18 +123,18 @@ body {
   font-size: 14px;
 }
 
-.primary-infos .container-card .social {
+div.social {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.primary-infos .container-card .social ul {
+div.social ul {
   list-style: none;
   display: flex;
 }
 
-.primary-infos .container-card .social ul li {
+div.social ul li {
   padding: 5px 10px;
   margin: 0 5px;
   border-radius: 60%;
@@ -235,11 +237,12 @@ table tr td {
   justify-content: space-around !important;
 }
 
-.content-github a svg {
-  transition: transform 0.3s;
+.content-github a.logo-link svg {
+  transition: transform 0.4s;
+  color: #fff;
 }
 
-.content-github a svg:hover {
+.content-github a.logo-link svg:hover {
   transform: rotate(18deg);
 }
 
@@ -350,8 +353,46 @@ table tr td {
 .content-pages .content-resume {
   background-color: yellowgreen;
 }
-.content-pages .content-portfolio {
-  background-color: yellowgreen;
+.content-pages .content-experience {
+  background-color: #1e2326;
+  padding: 40px 0;
+  height: auto !important;
+}
+
+.content-experience .content-timeline div {
+  background-color: #1e2326 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.content-experience .content-timeline ul {
+  margin-left: 30px;
+}
+
+.divider {
+  color: #fff;
+  background-color: #999;
+}
+
+.divider-footer {
+  color: #fff;
+  background-color: #fff;
+}
+
+.title-ul {
+  margin-top: 20px;
+  font-weight: 700;
+  border-bottom: 1px solid #fff;
+}
+
+footer {
+  display: flex !important;
+  background-color: #3e4854;
+  width: 100%;
+  min-height: 180px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 768px) {

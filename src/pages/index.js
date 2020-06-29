@@ -1,21 +1,22 @@
-import Head from "next/head";
-// import "isomorphic-fetch";
 import SectionHome from "./components/SectionHome";
 import SectionAbout from "./components/SectionAbout";
 import SectionGithub from "./components/SectionGithub";
+import SectionExperience from "./components/SectionExperience";
+import SectionFooter from "./components/SectionFooter";
 
 function Index({ github, repos }) {
   return (
-    <main className="main">
-      <div className="content-pages">
-        <SectionHome />
-        <SectionAbout />
-        <SectionGithub github={github} repos={repos} />
-        <section className="content-resume"></section>
-        <section className="content-portfolio"></section>
-        <section className="content-contatc"></section>
-      </div>
-    </main>
+    <>
+      <main className="main">
+        <div className="content-pages">
+          <SectionHome />
+          <SectionAbout />
+          <SectionGithub github={github} repos={repos} />
+          <SectionExperience />
+        </div>
+      </main>
+      <SectionFooter />
+    </>
   );
 }
 
