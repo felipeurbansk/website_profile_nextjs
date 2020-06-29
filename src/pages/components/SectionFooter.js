@@ -19,7 +19,6 @@ const SectionFooter = () => (
         </li>
       </ul>
     </div>
-    <hr className="divider-footer" />
     <small class="text-white">
       Felipe Urbanski -{" "}
       <cite title="Source Title">{moment().format("YYYY")}</cite>

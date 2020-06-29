@@ -34,8 +34,13 @@ a:link:hover {
   text-decoration: none;
 }
 
-body {
+body,
+main {
   background-color: #1e2326;
+}
+
+main {
+  padding-bottom: 30px;
 }
 
 #navbar-menu .link-page {
@@ -58,7 +63,7 @@ body {
 }
 
 .content-pages .bg-home {
-  height: 87vh;
+  height: 101vh;
   background-image: url("/img/background_2.webp");
   background-size: cover;
   opacity: 0.2;
@@ -248,6 +253,7 @@ table tr td {
 
 .content-github .section {
   width: 80%;
+  max-width: 490px;
   padding: 14px 0px 8px 0px;
 }
 
@@ -283,6 +289,7 @@ table tr td {
 }
 
 .content-github .box-follower .card-text,
+.content-github .box-follower .card-text span,
 .counter {
   color: #231b4f;
   font-size: 14px;
@@ -293,7 +300,7 @@ table tr td {
 }
 
 .container-repos {
-  max-height: 420px;
+  max-height: 460px;
   overflow: hidden;
   overflow-y: auto;
 }
@@ -318,7 +325,6 @@ table tr td {
 
 .counter {
   font-weight: bold;
-  margin-right: 3px;
 }
 
 .text-infos .icon {
@@ -362,6 +368,10 @@ table tr td {
   height: auto !important;
 }
 
+.content-experience .container-timeline {
+  max-width: 550px;
+}
+
 .content-experience .content-timeline div {
   background-color: #1e2326 !important;
   border: none !important;
@@ -389,16 +399,22 @@ table tr td {
 
 footer {
   display: flex !important;
-  background-color: #3e4854;
+  background-color: #1e2326;
   width: 100%;
   min-height: 150px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 10px;
+  border-top: 1px solid #777;
 }
 
 @media only screen and (min-width: 768px) {
-  .navbar-nav {
-    padding: 0;
+  .content-about .group-columns {
+    flex-direction: row;
+  }
+
+  .content-about .group-columns fieldset {
+    margin: 0 25px;
   }
 }

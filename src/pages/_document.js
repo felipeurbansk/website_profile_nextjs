@@ -20,7 +20,7 @@ class MyDocument extends Document {
             content="Essa é a minha página web, aqui você vai encontrar dados para contato, skills, portifólio e redes sociais."
             key="description"
           />
-          <NavBar />
+          {/* <NavBar /> */}
         </Head>
         <body>
           <Main />

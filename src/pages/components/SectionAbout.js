@@ -86,7 +86,7 @@ const SectionAbout = () => (
           </div>
           <div className="frame-icon">
             <FiCoffee />
-            <span>Coffe</span>
+            <span>Café</span>
           </div>
           <div className="frame-icon">
             <FiCode />
@@ -94,11 +94,11 @@ const SectionAbout = () => (
           </div>
           <div className="frame-icon">
             <FiCpu />
-            <span>Technology</span>
+            <span>Tecnologia</span>
           </div>
           <div className="frame-icon">
             <MdMovie />
-            <span>Movies</span>
+            <span>Filme/Serie</span>
           </div>
         </div>
       </fieldset>

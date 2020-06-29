@@ -9,10 +9,11 @@ import moment from "moment";
 const SectionExperience = () => (
   <section className="content-experience">
     <h5>Timeline</h5>
-    <Timeline lineColor="#777">
+    <Timeline lineColor="#777" className="container-timeline">
       <TimelineEvent
         title="Sistemas de Informação - FAFIT"
         createdAt="02/2015"
+        lineColor="#FFF"
         iconStyle={{ color: "#FFF" }}
         bubbleStyle={{ backgroundColor: "#2d2727" }}
         className="content-timeline"
