@@ -15,15 +15,15 @@ const languages = {
 
 const SectionGithub = ({ github, repos }) => (
   <section className="content-github">
-    <a
-      className="logo-link"
-      href="https://github.com/felipeurbansk"
-      target="_blank"
-    >
-      <AiFillGithub size={55} />
-    </a>
     {github && repos && (
       <div className="section section-profile">
+        <a
+          className="logo-link"
+          href="https://github.com/felipeurbansk"
+          target="_blank"
+        >
+          <AiFillGithub size={55} />
+        </a>
         <Card>
           <Card.Body>
             <Card.Title className="header-card">

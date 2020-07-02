@@ -29,6 +29,10 @@ div {
   color: #fff;
 }
 
+body a {
+  color: #3bb0a0;
+}
+
 a:link:hover {
   outline: none;
   text-decoration: none;
@@ -72,11 +76,12 @@ main {
 }
 
 .content-pages section:nth-child(n + 2):nth-child(-n + 6) {
-  padding: 20px 0;
+  padding: 60px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-bottom: 1px solid #777;
 }
 
 .primary-infos {
@@ -126,6 +131,7 @@ main {
 
 .primary-infos .container-card .subtitle {
   font-size: 14px;
+  color: #777;
 }
 
 div.social {
@@ -145,6 +151,16 @@ div.social ul li {
   border-radius: 60%;
   height: 40px;
   border: 1px solid #fff;
+  transition: background-color 0.5s;
+  transition: transform 0.5s;
+}
+
+div.social ul li:hover {
+  background-color: #3bb0a0;
+  transform: scale(1.08);
+}
+div.social ul a:hover {
+  color: #2d3134;
 }
 
 .content-pages .content-about h3 {
@@ -238,8 +254,20 @@ table tr td {
 }
 
 .content-pages .content-github {
-  background-color: #3e4854;
+  /* background-color: #3e4854; */
   justify-content: space-around !important;
+}
+
+.content-github .section-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-github .section-profile .card {
+  width: 100%;
+  margin-top: 15px;
 }
 
 .content-github a.logo-link svg {
@@ -406,7 +434,6 @@ footer {
   align-items: center;
   flex-direction: column;
   padding-top: 10px;
-  border-top: 1px solid #777;
 }
 
 @media only screen and (min-width: 768px) {
