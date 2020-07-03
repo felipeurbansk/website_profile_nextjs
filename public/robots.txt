@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: 
+
+Sitemap: https://app-profile.felipeurbansk.vercel.app/sitemap.xml

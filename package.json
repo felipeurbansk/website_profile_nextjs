@@ -18,6 +18,7 @@
     "react-dom": "16.13.1",
     "react-event-timeline": "^1.6.3",
     "react-icons": "^3.10.0",
-    "simplebar-react": "^2.2.1"
+    "simplebar-react": "^2.2.1",
+    "sitemap": "^6.1.7"
   }
 }
