@@ -271,12 +271,7 @@ table tr td {
 }
 
 .content-github a.logo-link svg {
-  transition: transform 0.4s;
   color: #fff;
-}
-
-.content-github a.logo-link svg:hover {
-  transform: rotate(18deg);
 }
 
 .content-github .section {
