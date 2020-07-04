@@ -10,8 +10,8 @@ function Index({ github, repos }) {
       <main className="main">
         <div className="content-pages">
           <SectionHome />
-          <SectionAbout />
           <SectionGithub github={github} repos={repos} />
+          <SectionAbout />
           <SectionExperience />
         </div>
       </main>

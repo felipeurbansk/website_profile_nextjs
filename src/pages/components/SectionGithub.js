@@ -17,6 +17,7 @@ const SectionGithub = ({ github, repos }) => (
   <section className="content-github">
     {github && repos && (
       <div className="section section-profile">
+        <h3 className="title">Github</h3>
         <a
           className="logo-link"
           href="https://github.com/felipeurbansk"

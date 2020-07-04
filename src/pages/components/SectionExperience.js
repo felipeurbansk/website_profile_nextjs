@@ -8,7 +8,7 @@ import moment from "moment";
 
 const SectionExperience = () => (
   <section className="content-experience">
-    <h5>Timeline</h5>
+    <h3 className="title">Timeline</h3>
     <Timeline lineColor="#777" className="container-timeline">
       <TimelineEvent
         title="Sistemas de Informação - FAFIT"

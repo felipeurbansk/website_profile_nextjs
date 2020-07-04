@@ -31,10 +31,12 @@ div {
 
 body a {
   color: #3bb0a0;
+  transition: color 0.4s;
 }
 
 a:link:hover {
   outline: none;
+  color: rgb(9, 9, 246);
   text-decoration: none;
 }
 
@@ -45,6 +47,13 @@ main {
 
 main {
   padding-bottom: 30px;
+}
+
+h3.title {
+  color: #fff;
+  margin: 30px 0px;
+  font-size: 30px;
+  border-bottom: 1px solid #666;
 }
 
 #navbar-menu .link-page {
@@ -160,7 +169,7 @@ div.social ul li:hover {
   transform: scale(1.08);
 }
 div.social ul a:hover {
-  color: #2d3134;
+  color: #fff;
 }
 
 .content-pages .content-about h3 {
@@ -274,6 +283,15 @@ table tr td {
   color: #fff;
 }
 
+.content-github a svg {
+  transition: color 0.3s;
+  filter: drop-shadow(3px 4px 6px rgba(0, 0, 0, 0.479));
+}
+
+.content-github a svg:hover {
+  color: #666;
+}
+
 .content-github .section {
   width: 80%;
   max-width: 490px;
@@ -385,6 +403,7 @@ table tr td {
 .content-pages .content-resume {
   background-color: yellowgreen;
 }
+
 .content-pages .content-experience {
   background-color: #1e2326;
   padding: 40px 0;
