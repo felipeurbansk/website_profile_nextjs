@@ -22,11 +22,15 @@ function Index({ github, repos }) {
 
 Index.getInitialProps = async () => {
   const response_perfil = await fetch(
-    "https://api.github.com/users/felipeurbansk"
+    "https://api.github.com/users/felipeurbansk",
+    {
+      authorization: "34b2ca24cc6239b01faa7ca1ea51f6ca711e159e",
+    }
   );
 
   const response_repo = await fetch(
-    "https://api.github.com/users/felipeurbansk/repos?sort=updated"
+    "https://api.github.com/users/felipeurbansk/repos?sort=updated",
+    { authorization: "34b2ca24cc6239b01faa7ca1ea51f6ca711e159e" }
   );
 
   const github = await response_perfil.json();
