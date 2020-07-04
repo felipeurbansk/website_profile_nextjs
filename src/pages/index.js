@@ -3,6 +3,7 @@ import SectionAbout from "./components/SectionAbout";
 import SectionGithub from "./components/SectionGithub";
 import SectionExperience from "./components/SectionExperience";
 import SectionFooter from "./components/SectionFooter";
+import SimpleBar from "simplebar-react";
 
 function Index({ github, repos }) {
   return (
