@@ -11,6 +11,7 @@ class MyDocument extends Document {
     return (
       <Html lang="pt-br">
         <Head>
+          <title>Felipe Urbanski - Fullstack Developer</title>
           <meta
             property="og:title"
             content="Felipe Urbanski - Fullstack Developer"
@@ -18,9 +19,11 @@ class MyDocument extends Document {
           />
           <meta
             property="og:description"
-            content="Essa é a minha página web, aqui você vai encontrar dados para contato, skills, portifólio e redes sociais."
+            content="Página web pessoal, aqui você encontra dados para contato, skills, portifólio e redes sociais."
             key="description"
           />
+          <meta name="robots" content="index, follow" />
+          <meta charset="UTF-8" />
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-171601637-1"
